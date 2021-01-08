@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1</title>
+    <link id='stylecss' type="text/css" rel="stylesheet" href="assign1_style.css">
+
+    <!-- External JS. -->
+    <script src="assign1_script.js"></script>
+
+    <link href="//fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      
+  </head>
+  <body>
+    <header>
+       <a name="home" ></a>
+       <div class="hpanel cover">
+            <!-- Image sourced from personal company and used for educational purposes only -->
+           <a href="assign1_index.html">
+            <img class="img-text" src='logo.png' alt='logo' width='125', height='125'/>
+           </a>
+           <h1>Anh Dung Scientific Instrument Limited Company</h1>
+        </div>
+    </header>
+	
+    <nav class="sticky">
+	   <ul>
+           <li><a id="navHome" href="assign1_index.html">Home</a></li>
+           <li><a id="navAbout" href="assign1_about.html">About Us</a></li>
+           <li><a id="navProducts" href="assign1_products.html" >Products</a></li>
+           <li class="current-nav"><a id="navForm" href="assign1_form.html" >Enquiry Form</a></li>
+           <li><a id="navContact" href="assign1_contact.html">Contact</a></li>
+	   </ul>
+    </nav>
+
+    <main>
+        <section class='mpanel cover'>
+            <h1 class="title">Enquiry Form</h1>
+            <!-- Image sourced from https://www.amazon.in/Lab-Scientific-Products/b?ie=UTF8&node=6409335031 and used for educational purposes only -->
+            <img src='front_pic5.png'/>
+            <form class="mpanel">
+                <fieldset>
+                    <legend>Products</legend>
+                    <label for="pro-name">Product name:<br></label>
+                    <input id="pro-name" name="pro[name]" class="input-field" type="text" placeholder="Name" pattern="^([a-zA-Z]+[ ,.'-]*)+$"/> 
+                    <br>
+                    <label for="pro-code">Product ID:<br></label>
+                    <input id="pro-code" name="pro[code]" class="input-field" type="tel" placeholder="ID">
+                        <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="cust-name">Name:<br></label>
+                    <input id="cust-name" name="cust[name]" class="input-field" type="text" placeholder="Name" pattern="^([a-zA-Z]+[ ,.'-]*)+$" value="" /> 
+                    <br>
+                    <label for="cust-gender">Gender:<br></label>
+                    <select id="cust-gender" name="cust[gender]" class="input-field">
+                        <option value='' selected>Please Select</option>
+                        <option value='1'>Male</option>
+                        <option value='2'>Female</option>
+                        <option value='3'>Others (Please specify if there is any special requests)</option>
+                    </select>
+                    <br>
+                    <label for="cust-email">Email:<br></label>
+                    <input id="cust-email" name="cust[email]" class="input-field" type="email" placeholder="Email" value="">
+                    <br>
+                    <label for="cust-mobile">Mobile:<br></label>
+                    <input id="cust-mobile" name="cust[mobile]" class="input-field" type="tel" placeholder="(+84)" pattern="[0-9]+">
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Request (if needed): <br></legend>
+                    <textarea name="message" style="width:90%; height:100px;"></textarea>
+                </fieldset>    
+                <input class="submit-button" id="form" name="form" type="submit" value="SUBMIT">
+            </form>
+        </section>
+	
+    </main>
+
+    <footer class="mpanel">
+      <div>&copy;<script>
+        document.write(new Date().getFullYear());
+      </script> Nguyen Khang Duy, s3636076
+          Disclaimer: This website is not a real website and is being developed as part of a School of Science Enterprise Application Development course at RMIT University</div>
+    </footer>
+    </body>
+</html>

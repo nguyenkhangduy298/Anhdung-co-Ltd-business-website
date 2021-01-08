@@ -1,0 +1,268 @@
+
+/*Padding and border are included in the width and height*/
+* {
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1.5px solid black;
+}
+
+/*Background cover used with parallax scrolling effect*/
+.cover{
+    background-image: url('background.png');
+	width: 100%; 
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+/*Head Panel*/
+.hpanel{
+	width: 97%;
+    display: block;
+	margin: 10px;
+    padding: 10px;
+    border: 1px solid #555555;
+	border-radius: 5px;
+	font-size: 150%;
+    font-family: "Lobster";
+    background-color: #dddddd;
+}
+
+/*Main Panel*/
+.mpanel{
+    width: 97%;
+    margin: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-family: Arial;
+    color: black;
+    background-color: #e5e4d7;
+    float: left;
+}
+
+/*Product Panel*/
+.ppanel{
+    width: 30%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-family: Arial;
+    color: black;
+    background-color: #e5e4d7;
+}
+
+.ppanel:hover{
+    background-color: #e5e4e9;
+}
+
+.img-text {
+    margin-left:0.1em;
+    margin-right: 1.2em;
+	margin-bottom: 0.7em;
+	max-width: 50%;
+	float: left;
+}
+
+.slideshow {
+    display: none;
+    width: 1000px;
+    height: 550px;
+    
+}
+
+.slide{
+    display: block;
+    width: 1000px;
+    max-height: 550px;
+    margin: auto;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.back, .forward {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    padding: 15px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.back:hover, .forward:hover {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.dot{
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: grey;
+    transition: background-color 0.5s ease;
+}
+
+.active, .dot:hover {
+    background-color: black;
+}
+
+.product{
+    width:250px;
+    height:250px;
+}
+
+.title{
+    text-align: center;
+}
+
+.brand{
+    width:300px;
+    height:225px;
+    min-width: 300px;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    margin-right: 1em;
+    margin-left: 1em;
+	float: left;
+}
+
+nav{
+	list-style-type: none;
+  	overflow: auto;
+  	background-color: #333;
+	width: 98%;
+	border-radius: 5px;
+    font-family: Arial;
+}
+
+nav ul{
+    list-style-type: none;
+    font-size: 110%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav ul li{
+    float:left;
+    width: 250px;
+    height:40px;
+    opacity:0.7;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li:hover {
+  	background-color: #111;
+    display: block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+  	display: block;
+  	color: white;
+    
+}
+.current-nav{
+    background-color: grey;
+    display: block
+}
+
+.button {
+ 	background-color: white;
+	color: black;
+  	border: 1px solid #555555;
+    border-radius: 5px;
+	width: 150px;
+	height: 50px;
+ 	text-align: center;
+  	display: block;
+ 	font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  	margin-right: auto;
+    margin-left: auto;
+	box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.button:hover{
+	background-color: #24a0ed;
+	color: white;
+}
+
+.button span{
+    opacity:0;
+}
+.button:hover span{
+    opacity:1;
+    transition: 0.5s;
+}
+
+iframe{
+    width: 500px;
+    height: 375px;
+    margin-bottom: 0.7em;
+	margin-left: 0.7em;
+	max-width: 50%;
+	float: right;
+}
+
+.input-field{
+    width: 90%;
+    padding: 5px;
+    margin: 2px;
+    font-size: 110%;
+}
+
+label, textarea{
+    font-size: 110%;
+}
+
+.submit-button{
+    width: 12%;
+    margin: 8px;
+    font-size: 110%;
+}
+
+/*Clear both right and left float*/
+p.descrip{
+    clear:both;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 120%;
+}
+

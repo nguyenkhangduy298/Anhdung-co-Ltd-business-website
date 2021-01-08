@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1</title>
+    <link id='stylecss' type="text/css" rel="stylesheet" href="assign1_style.css">
+
+    <!-- External JS. -->
+    <script src="assign1_script.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      
+  </head>
+  <body>
+    <header>
+       <a name="home" ></a>
+       <div class="hpanel cover">
+            <!-- Image sourced from personal company and used for educational purposes only -->
+           <a href="assign1_index.html">
+            <img class="img-text" src='logo.png' alt='logo' width='125', height='125'/>
+           </a>
+           <h1>Anh Dung Scientific Instrument Limited Company</h1>
+        </div>
+    </header>
+	
+    <nav class="sticky">
+	   <ul>
+           <li><a id="navHome" href="assign1_index.html" >Home</a></li>
+           <li><a id="navAbout" href="assign1_about.html" >About Us</a></li>
+           <li class="current-nav"><a id="navProducts" href="assign1_products.html" >Products</a></li>
+           <li><a id="navForm" href="assign1_form.html">Enquiry Form</a></li>
+           <li><a id="navContact" href="assign1_contact.html">Contact</a></li>
+	   </ul>
+    </nav>
+
+    <main>
+
+	   <section class="mpanel cover">
+           <h1 class="title mpanel cover">Products Details</h1>
+<!--        Load loadInfo function from javascript to display full product information below-->
+           <div id="pro1" name="pro1" class="ppanel" onclick="loadInfo(this)">
+               <!-- Image sourced from https://www.testoshop.vn/may-do-nhiet-do-testo-735-2.html and used for educational purposes only -->
+               <img class="product" src="product.png"/>
+               <h1 class="title">Thiết bị đo nhiệt độ Testo 735-2</h1>
+               <h2 class="title">Mã sản phẩm: 0563 7352</h2>
+                <p1>Hãng sản xuất: Testo- Đức</p1>
+               <button class="button">Yêu Cầu Báo Giá</button>
+           </div>
+           <div id="pro2" name="pro2" class="ppanel" onclick="loadInfo(this)">
+               <!-- Image sourced from https://nguyenanhvn.com/be-on-nhiet-memmert-wnb22.html and used for educational purposes only -->
+               <img class="product" src="product2.png"/>
+               <h1 class="title">Bể Cách Thủy</h1>
+               <h2 class="title">Mã sản phẩm: WNB22</h2>
+                <p1>Hãng sản xuất: Memmert – Đức</p1>
+               <button class="button">Yêu Cầu Báo Giá</button>
+           </div>
+           <div id="pro3" name="pro3" class="ppanel" onclick="loadInfo(this)">
+               <!-- Image sourced from https://fact-depot.com/dung-cu-hut-mau-1-kenh-pipet-lite-xls-dau-tiep-lts-mettler-toledo-l-100xls-p33401.html and used for educational purposes only -->
+               <img class="product" src="product3.png"/>
+               <h1 class="title">Micropipette – L-1000XLS+-</h1>
+               <h2 class="title">Mã sản phẩm: 17014382</h2>
+                <p1>Hãng sản xuất: Mettler Toledo – Thụy Sỹ</p1>
+               <button class="button">Yêu Cầu Báo Giá</button>
+           </div>
+           
+        </section>
+        
+<!--    Hidden Section and only display when loadInfo function is called-->
+        <section class="mpanel cover">
+            <h1 class="title mpanel cover">Products Information</h1>    
+            <div id="product-info" name="product-info" class="mpanel" hidden>
+                <img id="product-pic" name="product-pic" class="img-text" width='300', height='200'/>
+                <h1 id="product-name" name="product-name"></h1>
+                <h2 id="product-code" name="product-code"></h2>
+                <a href="assign1_form.html"><button class="button" style="float:left;" onclick="requestInfo(this)">Báo giá<span>>></span></button></a>
+                <p class="descrip">Product Specification:<br></p>
+                <p id="product-descrip" name="product-descrip"></p>
+                
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="mpanel">
+      <div>&copy;<script>
+        document.write(new Date().getFullYear());
+      </script> Nguyen Khang Duy, s3636076
+          Disclaimer: This website is not a real website and is being developed as part of a School of Science Enterprise Application Development course at RMIT University</div>
+    </footer>
+    
+  </body>
+</html>

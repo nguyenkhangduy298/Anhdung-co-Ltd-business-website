@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 1</title>
+    <!--External CSS-->
+    <link id='stylecss' type="text/css" rel="stylesheet" href="assign1_style.css">
+
+    <!-- External JS. -->
+    <script src="assign1_script.js"></script>
+    <!--Load external fonts from google-->
+    <link href="//fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      
+  </head>
+  <body>
+    <header>
+       <a name="home" ></a>
+       <div class="hpanel cover">
+           <a href="assign1_index.html">
+            <!-- Image sourced from personal company and used for educational purposes only -->
+            <img class="img-text" src='logo.png' alt='logo' width='125', height='125'/>
+           </a>
+           <h1>Anh Dung Scientific Instrument Limited Company</h1>
+        </div>
+    </header>
+	
+    <nav class="sticky">
+	   <ul>
+           <li class="current-nav"><a class="nav" id="navHome" href="assign1_index.html">Home</a></li>
+           <li><a id="navAbout" href="assign1_about.html" >About Us</a></li>
+           <li><a id="navProducts" href="assign1_products.html">Products</a></li>
+           <li><a id="navForm" href="assign1_form.html" >Enquiry Form</a></li>
+           <li><a id="navContact" href="assign1_contact.html">Contact</a></li>
+	   </ul>
+    </nav>
+
+    <main>
+        <section class="mpanel cover">
+<!--            All images and dots/buttons for controlling slideshow-->
+            <div class="slide">
+                <!-- Image sourced from https://phsdiabetes.weebly.com/ottawa-charter.html and used for educational purposes only -->
+                <div class="slideshow"><img src="main_page2.png"></div>
+                <!-- Image sourced from https://www.dreamstime.com/laboratory-microscope-healthcare-medicine-researcher-scientist-lab-equipment-tools-table-science-technology-image137261954 and used for educational purposes only -->
+                <div class="slideshow"><img src="main_page3.png"></div>
+                <!-- Image sourced from https://zingnews.vn/thay-tro-dh-thuy-loi-tu-lam-nuoc-rua-tay-phat-mien-phi-post1043471.html and used for educational purposes only -->
+                <div class="slideshow"><img src="main_page1.png"></div>
+                <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+            <h1 class="title mpanel cover">About Us</h1>
+            <div class="mpanel" >
+                <!-- Image sourced from https://cos.io/blog/using-osf-lab/ and used for educational purposes only -->
+                <img class="img-text" style="border: 2px solid white;" src='front_pic4.jpeg' width='300', height='200'/>
+                <ul>
+                    <li style="margin:20px 0;">
+        Công ty TNHH Thiết bị Khoa học Kỹ thuật Anh Dũng hiện nay là một trong những công ty cung cấp trang thiết bị cho phòng thí nghiệm, kiểm nghiệm và đo đạc trong các ngành: Dược phẩm, Thực phẩm, Thức ăn gia súc, Mỹ phẩm, Thủy sản, Thú y, Quan trắc môi trường và Dầu khí,... </li>
+                    <li style="margin:20px 0;">
+        Với kinh nghiệm trong vai trò là nhà cung cấp trang thiết bị cho các cơ quan, trường học, bệnh viện, viện nghiên cứu, trung tâm kiểm nghiệm, các phòng thí nghiệm trên khắp cả nước, cùng với một đội ngũ nhân lực nhiệt tình, giỏi chuyên môn, giàu kinh nghiệm, công ty chúng tôi ngày càng khẳng định được tên tuổi và uy tín của mình tại Việt Nam.</li>
+                    <li style="margin:20px 0;">
+        Hiện nay, công ty chúng tôi là đại diện, đại lý phân phối của nhiều hãng trên thế giới như: Fisher scientific (Mỹ), ThermoFisher (Mỹ), Acros (Bỉ), Hach (Mỹ), Prolabo (Pháp), Merck (Đức), Labscan (Thái Lan), Kern (Đức), Sartorius (Đức) , Kitagawa (Nhật Bản), Forestry-Supplier (Mỹ), Restek (Mỹ), Sigam-Aldrich (Mỹ), Daihan (Hàn Quốc), Alla (Pháp), Atago (Nhật)Scharlau (Tây Ban Nha), Witeg (Đức), Burkle (Đức),...
+                </ul>
+                <!--When Click go straight to About Us page-->
+                <a href="assign1_about.html"><button class="button">Learn More<span>>></span></button></a>
+            </div>
+        </section>
+        
+        <section class="mpanel cover">
+            <h1 class="title mpanel cover">Certified Brands</h1>
+            <!-- Image sourced from http://www.dongnamlab.com/biologix-125 and used for educational purposes only -->
+            <img class="brand" src='brand8.png'/>
+            <!-- Image sourced from https://seeklogo.com/vector-logo/91755/mettler-toledo and used for educational purposes only -->
+            <img class="brand" src='brand7.png'/>
+            <!-- Image sourced from https://safeenv-company.com/clients/memmert/ and used for educational purposes only -->
+            <img class="brand" src='brand6.png'/>
+            <!-- Image sourced from http://www.datnamco.vn/website-cong-ty-hach-vn-tt-186.aspx and used for educational purposes only -->
+            <img class="brand" src='brand5.png'/>
+            <!-- Image sourced from https://appablog.wordpress.com/2014/10/29/merck-forms-a-scientific-partnership-with-kenya-medical-research-institute-kemri-as-part-of-its-capacity-advancement-program-in-africa/ and used for educational purposes only -->
+            <img class="brand" src='brand4.png'/>
+            <!-- Image sourced from https://www.fishersci.fi/at/en/promotions/fisher-chemical-aqualine-reagents.html and used for educational purposes only -->
+            <img class="brand" src='brand3.png'/>
+            <!-- Image sourced from https://pharmaboardroom.com/directory/thermo-fisher-scientific-china/ and used for educational purposes only -->
+            <img class="brand" src='brand2.png'/>
+            <!-- Image sourced from https://www.itwreagents.com/italy/en/ga-distributor-brands_acros and used for educational purposes only -->
+            <img class="brand" src='brand1.png'/>
+        </section>
+        <section class="mpanel cover">
+           <h1 class="title mpanel cover">Products</h1>
+            <!--When Click go straight to product page-->
+            <a href="assign1_products.html">
+           <div id="pro1" name="pro1" class="ppanel">
+               <!-- Image sourced from https://www.testoshop.vn/may-do-nhiet-do-testo-735-2.html and used for educational purposes only -->
+               <img class="product" src="product.png"/>
+               <h1 class="title">Thiết bị đo nhiệt độ Testo 735-2</h1>
+               <h2 class="title">Mã sản phẩm: 0563 7352</h2>
+                <p1>Hãng sản xuất: Testo- Đức</p1>
+               <button class="button">Yêu Cầu Báo Giá</button>
+           </div>
+           <div id="pro2" name="pro2" class="ppanel">
+               <!-- Image sourced from https://nguyenanhvn.com/be-on-nhiet-memmert-wnb22.html and used for educational purposes only -->
+               <img class="product" src="product2.png"/>
+               <h1 class="title">Bể Cách Thủy</h1>
+               <h2 class="title">Mã sản phẩm: WNB22</h2>
+                <p1>Hãng sản xuất: Memmert – Đức</p1>
+               <button class="button">Yêu Cầu Báo Giá</button>
+           </div>
+           <div id="pro3" name="pro3" class="ppanel">
+               <!-- Image sourced from https://fact-depot.com/dung-cu-hut-mau-1-kenh-pipet-lite-xls-dau-tiep-lts-mettler-toledo-l-100xls-p33401.html and used for educational purposes only -->
+               <img class="product" src="product3.png"/>
+               <h1 class="title">Micropipette – L-1000XLS+-</h1>
+               <h2 class="title">Mã sản phẩm: 17014382</h2>
+                <p1>Hãng sản xuất: Mettler Toledo – Thụy Sỹ</p1>
+               <button class="button">Yêu Cầu Báo Giá</button>
+           </div></a>
+        </section>
+    </main>
+
+    <footer class="mpanel">
+      <div>&copy;<script>
+        document.write(new Date().getFullYear());
+      </script> Nguyen Khang Duy, s3636076
+          Disclaimer: This website is not a real website and is being developed as part of a School of Science Enterprise Application Development course at RMIT University</div>
+    </footer>
+    
+  </body>
+<!--    Function for controlling/changing the Slide of pictures-->
+    <script>
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        // Main function of showing the images one by one
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slideshow"); // get all images for slides
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {// loop through all the images
+              slides[i].style.display = "none";  
+          }
+            
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+            
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</html>
